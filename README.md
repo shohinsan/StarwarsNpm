@@ -39,6 +39,8 @@ To install a beta version, use:
 Or specify the version:
 `npm install starwars-names-v2@1.0.0-beta.0`
 
+`commit`, `add new tag`, `push commit`, `push new tag`
+
 ## Check if your registry exists
 
 To verify if your package exists in the npm registry, run:
