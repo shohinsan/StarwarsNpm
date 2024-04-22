@@ -39,7 +39,14 @@ To install a beta version, use:
 Or specify the version:
 `npm install starwars-names-v2@1.0.0-beta.0`
 
-`commit`, `add new tag`, `push commit`, `push new tag`
+
+## In shorts
+
+`commit`, `add new tag`, `push commit`, `push new tag`, `npm publish`
+
+* Make sure to bump up tag version, you cannot downgrade it, it will give you an error.
+
+
 
 ## Check if your registry exists
 
