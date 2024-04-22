@@ -1,4 +1,4 @@
-import * as starWarsNames from "./starwars-names.json";
+import starWarsNames from "./starwars-names.json";
 
 const uniqueRandomArray = <T>(arr: T[]): (() => T) => {
   const copy = arr.slice();
