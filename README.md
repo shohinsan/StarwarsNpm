@@ -8,6 +8,7 @@
 
 ## Publish to NPM
 * Double check your package.json and correct your information as needed.
+* push your code to github
 * type `npm publish` to make it accessible for users
 
 # In Terminal
