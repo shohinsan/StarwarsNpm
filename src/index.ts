@@ -13,7 +13,6 @@ const uniqueRandomArray = <T>(arr: T[]): (() => T) => {
   };
 };
 
-module.exports = {
-  all: starWarsNames,
-  random: uniqueRandomArray(starWarsNames),
-};
+// Export the data and the random function
+export const all = starWarsNames;
+export const random = uniqueRandomArray(starWarsNames)
