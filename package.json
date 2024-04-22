@@ -1,0 +1,24 @@
+{
+  "name": "starwars-names",
+  "version": "1.4.0",
+  "description": "Get random Star Wars names",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shohinsan/StarwarsNpm.git"
+  },
+  "keywords": [
+    "random",
+    "star",
+    "wars"
+  ],
+  "author": "Shohin Abdulkhamidov <abd.shohin@gmail.com> (https://shohin.pages.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shohinsan/StarwarsNpm/issues"
+  },
+  "homepage": "https://github.com/shohinsan/StarwarsNpm#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.7"
+  }
+}
