@@ -3,6 +3,8 @@
 Star Wars Names v2 is a Node.js package that provides a collection of Star Wars character names for use in your projects.
 
 ## Usage
+install `npm i starwars-names-v2`
+
 ```bash
 import { all, random } from "starwars-names-v2";
 
