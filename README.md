@@ -1,9 +1,18 @@
 # Star Wars Names v2
 
-Star Wars Names v2 is a Node.js package that provides a collection of Star Wars character names for use in your projects.
+**Star Wars Names v2** is a Node.js package that provides a collection of Star Wars character names for use in your projects.
 
-## Usage
-install `npm i starwars-names-v2`
+---
+
+## 🚀 Usage
+
+Install the package:
+
+```bash
+npm i starwars-names-v2
+```
+
+Import and use:
 
 ```bash
 import { all, random } from "starwars-names-v2";
@@ -12,62 +21,114 @@ console.log("All Star Wars names:", all);
 console.log("Random Star Wars name:", random());
 ```
 
-## Package Setup
+---
 
-* Set your npm package configuration:
+## ⚙️ Package Setup
+
+1. Set your npm package configuration:
+
+   ```bash
+   npm set init-author-name 'Shohin Abdulkhamidov'
+   npm set init-author-email 'abd.shohin@gmail.com'
+   npm set init-author-url 'https://shohinsan.pages.dev'
+   npm set init-license 'MIT'
+   npm set save-exact true
+   ```
+
+2. Install Node.js types:
+
+   ```bash
+   npm i --save-dev @types/node
+   ```
+
+3. Create an account on [npmjs.com](https://www.npmjs.com).
+
+4. Authenticate from your terminal:
+
+   ```bash
+   npm adduser
+   ```
+
+   Follow the prompts to verify your account in the browser.
+
+---
+
+## 📦 Publishing to NPM
+
+Before publishing, ensure your **`package.json`** is properly configured:
+
+- The `"name"` property must be **unique** and not conflict with existing packages.
+- Double-check your author info, license, and version.
+
+Once ready:
 
 ```bash
-npm set init-author-name 'Shohin Abdulkhamidov'
-npm set init-author-email 'abd.shohin@gmail.com'
-npm set init-author-url 'https://shohinsan.pages.dev'
-npm set init-license 'MIT'
-npm set save-exact true
+git push origin main
+npm publish
 ```
 
-* Install the Node.js types:
-`npm i --save-dev @types/node`
-* Create an account on npmjs.com.
-* In your terminal, run:
-`npm adduser`
+---
 
-Follow the prompts to verify your account in the browser.
+## 🏷️ Versioning & Tags
 
-## Publish to NPM
-Before publishing your package to npm, ensure that your package.json file is correctly configured with your information. Make sure that the "name" property is unique and not similar to any existing package in the npm registry to avoid Error 403.
+- Always **bump the version** before publishing.  
+  Example:
 
-Once your package is ready, push your code to GitHub and run:
-`npm publish`
+  ```bash
+  git tag v1.0.0
+  git push origin v1.0.0
+  npm publish
+  ```
 
-## Other
-On every update/commit, make sure to bump up the tag version using git tag 1.0.0, then git push changes, and finally git push --tags.
+- **Beta releases:**
 
-To add a beta version, ensure the version is specified as 1.0.0-beta.0 and follow the same process as above, but with git tag 1.0.0-beta.0, git push --tags, and npm publish --tag beta.
+  ```bash
+  # Tagging a beta release
+  git tag v1.0.0-beta.0
+  git push origin v1.0.0-beta.0
 
-To install a beta version, use:
-`npm install starwars-names-v2@beta`
+  # Publish as beta
+  npm publish --tag beta
+  ```
 
-Or specify the version:
-`npm install starwars-names-v2@1.0.0-beta.0`
+- Install beta versions:
 
+  ```bash
+  npm install starwars-names-v2@beta
+  # or
+  npm install starwars-names-v2@1.0.0-beta.0
+  ```
 
-## In shorts
+---
 
-`commit`, `add new tag`, `push commit`, `push new tag`, `npm publish`
+## 📝 In Short
 
-* Make sure to bump up tag version, you cannot downgrade it, it will give you an error.
+1. `git commit`
+2. `git tag <version>`
+3. `git push && git push --tags`
+4. `npm publish`
 
+⚠️ **Note:** You cannot downgrade versions. Attempting to do so will result in an error.
 
+---
 
-## Check if your registry exists
+## 🔍 Verify Your Package
 
-To verify if your package exists in the npm registry, run:
-`npm info starwars-names-v2`
+Check if your package exists in the npm registry:
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+```bash
+npm info starwars-names-v2
+```
 
-## Acknowledgments
+---
 
-Star Wars API - For providing the data used in this package.
-npm - For hosting Node.js packages.
+## 📄 License
 
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgments
+
+- **[Star Wars API](https://swapi.dev/)** – For providing the data used in this package.  
+- **[npm](https://www.npmjs.com/)** – For hosting Node.js packages.
